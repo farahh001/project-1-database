@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: project-1-336
+-- Host: 127.0.0.1    Database: project336
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -24,9 +24,9 @@ DROP TABLE IF EXISTS `student`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `student` (
   `id` int NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `class` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `studentcol` varchar(45) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  PRIMARY KEY (`studentcol`,`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-01 21:07:57
+-- Dump completed on 2022-03-01 21:36:51
